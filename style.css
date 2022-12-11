@@ -68,7 +68,7 @@ margin:2px;
 }
 sub:hover
 {
-color: green;
+color: lightgreen;
 cursor: pointer;
 }
 #btncontainer
@@ -83,6 +83,7 @@ color:black;;
 border-radius: .4rem;
 background-color: #62fafe;
 width: 5rem;
+
 height: 2rem;
 }
 #initmsg
@@ -94,6 +95,7 @@ margin: 10%;
 border-radius: .3rem;
 color: white;
 display: none;
+transition:display  .4s;
 }
 div p{
 text-align: center;

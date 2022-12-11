@@ -1,3 +1,4 @@
+var count=sessionStorage.length;
 
  function  additem()
 {
@@ -12,11 +13,18 @@ var para = document.createElement("li");
 para.innerHTML=document.getElementById('data').value;
 var sp=document.getElementById("ul");
 sp.appendChild(para);
+sessionStorage.setItem(count++,document.getElementById('data').value);
 document.getElementById('btncontainer').style.display="none";
 document.getElementById('userentry').style.display="none";
 }
 
 function onloadevent(){
+
+
+  for( i=0;i<sessionStorage.length;i++)
+  {
+reload(sessionStorage.getItem(i));
+  }
 document.getElementById('initmsg').style.display="block";
 setTimeout(function()
 {
@@ -27,5 +35,13 @@ setTimeout(function()
 
 
 
+
+}
+function reload(value)
+{
+var para = document.createElement("li");
+para.innerHTML=value;
+var sp=document.getElementById("ul");
+sp.appendChild(para);
 
 }
