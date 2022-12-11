@@ -15,3 +15,17 @@ sp.appendChild(para);
 document.getElementById('btncontainer').style.display="none";
 document.getElementById('userentry').style.display="none";
 }
+
+function onloadevent(){
+document.getElementById('initmsg').style.display="block";
+setTimeout(function()
+{
+
+  document.getElementById('initmsg').style.display="none";
+
+},3000)
+
+
+
+
+}
