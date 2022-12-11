@@ -1,2 +1,1 @@
-note:
-data entered is not stored in any database or localstorage ,so data will be lost once reloaded ..
+this is simple note taking app that allow to store data in the sessionStorage
